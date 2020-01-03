@@ -1,4 +1,4 @@
-# SPACE TRENDS
+![spacetrends](images/SPACE_TRENDS)
 by Matthew Oliver
 
 ## Project Outline
