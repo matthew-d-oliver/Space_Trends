@@ -1,4 +1,4 @@
-![spacetrends](images/SPACE_TRENDS.png)
+# Space Trends
 by Matthew Oliver
 
 ## Project Outline
@@ -10,6 +10,7 @@ The goal of this project is to build a forecasting model for public interest in 
 ## Data Collection
 ### Google Trends
 Historical search interest data was obtained through the PyTrends python package for a selection of space-related terms. Time decompositions of different earch terms were done, with differing results. 'Space Exploration' was the term brought forward for modelling due to its consistent seasonality and lack of search peaks. Other terms such as 'Space-X' or 'Mars Exploration' were not used due to the search interest being highly erratic, peaking from random company press releases or events, which are hard to account for in the model.
+![space_exp](images/seasonal_space_exp.png)
 
 ### Space Stocks
 The first variable for the model was a compostie stock of the largest defense/aerospace companies, which, in theory, would be reflective of public financial interest in space exploration and commercialized space markets. The historic stock returns of the largest (by 2019 market cap) were pulled from the AlphaVantage stock API. The daily stock value was first calculated as a percent change from the previous trading day to normalize with the other companies, and then aggregated with the other stocks. This daily return had the daily percent return of the S&P 500 subracted from it to isolate it from overall market trends. 
